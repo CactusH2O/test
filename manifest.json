@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Chome Extension Test",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [  
+        "<all_urls"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "defualt_icon": "https://cdn.glitch.com/91748ed6-878f-496f-8617-cba84626c0b5%2FLand-of-the-Lustrous-16.jpg?v=1595618603815"
+  }
+}
